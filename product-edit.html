@@ -86,11 +86,11 @@
                                 <i class="fa big-icon fa-shopping-bag icon-wrap"></i>
                                 <span class="mini-click-non">Produk</span>
                             </a>
-                            <a href="product-cart.html">
+                            <a href="order.html">
                                 <i class="fa big-icon fa-shopping-cart icon-wrap"></i>
                                 <span class="mini-click-non">Order</span>
                             </a>
-                            <a href="mailbox-view.html">
+                            <a href="mailbox.html">
                                 <i class="fa big-icon fa-envelope icon-wrap"></i>
                                 <span class="mini-click-non">Pesan</span>
                             </a>
@@ -194,11 +194,11 @@
                                                 <i class="fa big-icon fa-shopping-bag icon-wrap"></i>
                                                 <span class="mini-click-non">Produk</span>
                                             </a>
-                                            <a href="product-cart.html">
+                                            <a href="order.html">
                                                 <i class="fa big-icon fa-shopping-cart icon-wrap"></i>
                                                 <span class="mini-click-non">Order</span>
                                             </a>
-                                            <a href="mailbox-view.html">
+                                            <a href="mailbox.html">
                                                 <i class="fa big-icon fa-envelope icon-wrap"></i>
                                                 <span class="mini-click-non">Pesan</span>
                                             </a>
@@ -290,44 +290,57 @@
                                         </div>
                                     </div>
 
+
+                                    <div class="image-crop" hidden>
+                                        <img src="img/product-none.png" alt="" style="width: 100%;">
+                                    </div>
                                     <!-- ============================= -->
                                     <div class="product-tab-list tab-pane fade" id="images">
                                         <div class="row">
-                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                <div class="row">
-                                                    <div class="col-md-6 col-md-6 col-sm-6 col-xs-12">
-                                                        <div class="image-crop">
-                                                            <img src="img/product-none.png" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6 col-md-6 col-sm-6 col-xs-12">
-                                                        <div class="preview-img-pro-ad">
-                                                            <h4>Preview image</h4>
-                                                            <div class="img-preview img-preview-custom"></div>
-                                                            <h4 class="comon-method">Comon method</h4>
-                                                            <p>
-                                                                You can upload new image to crop.
-                                                            </p>
-                                                            <div class="btn-group images-cropper-pro">
-                                                                <label title="Upload image file" for="inputImage" class="btn btn-primary img-cropper-cp">
-																		<input type="file" accept="image/*" name="file" id="inputImage" class="hide"> Upload new image
-																	</label>
-                                                                <label title="Donload image" id="download" class="btn btn-primary">Download</label>
-                                                            </div>
-                                                            <h4 class="comon-method">Other method</h4>
-                                                            <p>
-                                                                You may set cropper options with <code>$(image}).cropper(options)</code>
-                                                            </p>
-                                                            <div class="btn-group images-action-pro">
-                                                                <button class="btn btn-white" id="zoomIn" type="button">Zoom In</button>
-                                                                <button class="btn btn-white" id="zoomOut" type="button">Zoom Out</button>
-                                                                <button class="btn btn-white" id="rotateLeft" type="button">Rotate Left</button>
-                                                                <button class="btn btn-white" id="rotateRight" type="button">Rotate Right</button>
-                                                                <button class="btn btn-warning img-cropper-cp-t" id="setDrag" type="button">New crop</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            <div class="col-lg-6 col-md-6 col-xs-12">
+                                                <center>
+                                                    <img class="img-fluid" src="./img/product-none.png"
+                                                        style="width: 200px;">
+                                                </center>
+                                                <div class="form-group">
+                                                    <input type="file" class="form-control" id="img-in">
                                                 </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-xs-12">
+                                                <table class="table">
+                                                    <tr>
+                                                        <th>Image</th>
+                                                        <th>upload date</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <center>
+                                                                <img src="./img/new-product/1.jpg" style="width: 72px;"
+                                                                    alt="">
+                                                            </center>
+                                                        </td>
+                                                        <td>12/12/2019 - 02:12:11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <center>
+                                                                <img src="./img/new-product/1.jpg" style="width: 72px;"
+                                                                    alt="">
+                                                            </center>
+                                                        </td>
+                                                        <td>12/12/2019 - 02:12:11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <center>
+                                                                <img src="./img/new-product/1.jpg" style="width: 72px;"
+                                                                    alt="">
+                                                            </center>
+                                                        </td>
+                                                        <td>12/12/2019 - 02:12:11</td>
+                                                    </tr>
+                                                    
+                                                </table>
                                             </div>
                                         </div>
                                     </div>

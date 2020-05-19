@@ -59,6 +59,9 @@
     <!-- responsive CSS
 		============================================ -->
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- cropper CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/cropper/cropper.min.css">
     <!-- modernizr JS
 		============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -218,120 +221,69 @@
             <!-- Mobile Menu end -->
         </div>
 
-        <div class="product-status mg-tb-15">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="product-status-wrap">
-                            <h4>Products List</h4>
-                            <div class="add-product">
-                                <a href="/product-edit.html">Add Product</a>
-                            </div>
-                            <table>
-                                <tr>
-                                    <th>Image</th>
-                                    <th>Nama Produk</th>
-                                    <th>Terjual</th>
-                                    <th>Total Penjualan</th>
-                                    <th>Stock</th>
-                                    <th>Harga</th>
-                                    <th>Action</th>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/new-product/1.jpg" alt="" /></td>
-                                    <td>Paprika</td>
-                                    <td>50</td>
-                                    <td>Rp 600.000</td>
-                                    <td>100</td>
-                                    <td>Rp. 12.000</td>
-                                    <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i
-                                                class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i
-                                                class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/new-product/3.jpg" alt="" /></td>
-                                    <td>Paprika</td>
-                                    <td>50</td>
-                                    <td>Rp 600.000</td>
-                                    <td>100</td>
-                                    <td>Rp. 12.000</td>
-                                    <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i
-                                                class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i
-                                                class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/new-product/1.jpg" alt="" /></td>
-                                    <td>Paprika</td>
-                                    <td>50</td>
-                                    <td>Rp 600.000</td>
-                                    <td>100</td>
-                                    <td>Rp. 12.000</td>
-                                    <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i
-                                                class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i
-                                                class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/new-product/1.jpg" alt="" /></td>
-                                    <td>Paprika</td>
-                                    <td>50</td>
-                                    <td>Rp 600.000</td>
-                                    <td>100</td>
-                                    <td>Rp. 12.000</td>
-                                    <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i
-                                                class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i
-                                                class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/new-product/1.jpg" alt="" /></td>
-                                    <td>Paprika</td>
-                                    <td>50</td>
-                                    <td>Rp 600.000</td>
-                                    <td>100</td>
-                                    <td>Rp. 12.000</td>
-                                    <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i
-                                                class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i
-                                                class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/new-product/1.jpg" alt="" /></td>
-                                    <td>Paprika</td>
-                                    <td>50</td>
-                                    <td>Rp 600.000</td>
-                                    <td>100</td>
-                                    <td>Rp. 12.000</td>
-                                    <td>
-                                        <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i
-                                                class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                                        <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i
-                                                class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                            </table>
-                            <div class="custom-pagination">
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination">
-                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                    </ul>
-                                </nav>
+        <!-- Single pro tab start-->
+        <div class="single-product-tab-area mg-tb-15">
+            <!-- Single pro tab review Start-->
+            <div class="single-pro-review-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="review-tab-pro-inner">
+                                <ul id="myTab3" class="tab-review-design">
+                                    <li class="active"><a href="#order">Order</a></li>
+                                    <li><a href="#dikirim">Dikirm</a></li>
+                                    <li><a href="#diterima">Diterima</a></li>
+                                    <li><a href="#gagal">Tranksaksi Gagal</a></li>
+                                </ul>
+                                <div id="myTabContent" class="tab-content custom-product-edit">
+                                    <div class="product-tab-list tab-pane fade active in" id="order">
+                                        <dic class="row">
+                                            <div class="col-lg-12">
+                                                <table class="table table-striped text-center">
+                                                    <tr>
+                                                        <th class="text-center">Image</th>
+                                                        <th class="text-center">Nama Produk</th>
+                                                        <th class="text-center">Kuantitas</th>
+                                                        <th class="text-center">Total Biaya</th>
+                                                        <th class="text-center">Action</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./img/new-product/1.jpg" style="width : 60px" alt=""></td>
+                                                        <td>Lorem ipsum dolor sit amet</td>
+                                                        <td class="text-center">12 pcs</td>
+                                                        <td>Rp. 12.000</td>
+                                                        <td>
+                                                            <button data-toggle="tooltip" title="Detail" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Detail</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./img/new-product/1.jpg" style="width : 60px" alt=""></td>
+                                                        <td>Lorem ipsum dolor sit amet</td>
+                                                        <td class="text-center">12 pcs</td>
+                                                        <td>Rp. 12.000</td>
+                                                        <td>
+                                                            <button data-toggle="tooltip" title="Detail" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Detail</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="./img/new-product/1.jpg" style="width : 60px" alt=""></td>
+                                                        <td>Lorem ipsum dolor sit amet</td>
+                                                        <td class="text-center">12 pcs</td>
+                                                        <td>Rp. 12.000</td>
+                                                        <td>
+                                                            <button data-toggle="tooltip" title="Detail" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Detail</button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </dic>
+                                    </div>
+                                    <!-- ============================= -->
+                                    <div class="product-tab-list tab-pane fade" id="dikirim">
+
+                                    </div>
+                                    <!-- ============================= -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -357,52 +309,58 @@
 		============================================ -->
     <script src="js/vendor/jquery-1.11.3.min.js"></script>
     <!-- bootstrap JS
-            ============================================ -->
+		============================================ -->
     <script src="js/bootstrap.min.js"></script>
     <!-- wow JS
-            ============================================ -->
+		============================================ -->
     <script src="js/wow.min.js"></script>
     <!-- price-slider JS
-            ============================================ -->
+		============================================ -->
     <script src="js/jquery-price-slider.js"></script>
     <!-- meanmenu JS
-            ============================================ -->
+		============================================ -->
     <script src="js/jquery.meanmenu.js"></script>
     <!-- owl.carousel JS
-            ============================================ -->
+		============================================ -->
     <script src="js/owl.carousel.min.js"></script>
     <!-- sticky JS
-            ============================================ -->
+		============================================ -->
     <script src="js/jquery.sticky.js"></script>
     <!-- scrollUp JS
-            ============================================ -->
+		============================================ -->
     <script src="js/jquery.scrollUp.min.js"></script>
     <!-- mCustomScrollbar JS
-            ============================================ -->
+		============================================ -->
     <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/scrollbar/mCustomScrollbar-active.js"></script>
     <!-- metisMenu JS
-            ============================================ -->
+		============================================ -->
     <script src="js/metisMenu/metisMenu.min.js"></script>
     <script src="js/metisMenu/metisMenu-active.js"></script>
     <!-- morrisjs JS
-            ============================================ -->
+		============================================ -->
     <script src="js/sparkline/jquery.sparkline.min.js"></script>
     <script src="js/sparkline/jquery.charts-sparkline.js"></script>
     <!-- calendar JS
-            ============================================ -->
+		============================================ -->
     <script src="js/calendar/moment.min.js"></script>
     <script src="js/calendar/fullcalendar.min.js"></script>
     <script src="js/calendar/fullcalendar-active.js"></script>
     <!-- tab JS
-            ============================================ -->
+		============================================ -->
     <script src="js/tab.js"></script>
     <!-- plugins JS
-            ============================================ -->
+		============================================ -->
     <script src="js/plugins.js"></script>
+    <!-- cropper JS
+		============================================ -->
+    <script src="js/cropper/cropper.min.js"></script>
+    <script src="js/cropper/cropper-actice.js"></script>
+
     <!-- main JS
-            ============================================ -->
+		============================================ -->
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
